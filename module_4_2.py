@@ -7,4 +7,5 @@ def test_function():
 
 test_function()
 
-inner_function() #неверно
+inner_function() #Вызов функции inner function в глобальном пространстве имëн невозможен,
+                 # так как она существует только в локальном пространстве функции test function.
