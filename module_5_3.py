@@ -19,55 +19,55 @@ class House:
 
     def __eq__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors == other.number_of_floors  #Дополнено
+            return self.number_of_floors == other.number_of_floors  # Дополнено
         else:
             print('None')
 
     def __add__(self, value):
         if isinstance(value, int):
-            return House(self.name, self.number_of_floors + value)  #Дополнено
+            return House(self.name, self.number_of_floors + value)  # Дополнено
         else:
             print('None')
 
     def __iadd__(self, value):
         if isinstance(value, int):
-            return House(self.name, self.number_of_floors + value)  #Дополнено
+            return House(self.name, self.number_of_floors + value)  # Дополнено
         else:
             print('None')
 
     def __radd__(self, value):
         if isinstance(value, int):
-            return House(self.name, self.number_of_floors + value)  #Дополнено
+            return House(self.name, self.number_of_floors + value)  # Дополнено
         else:
             print('None')
 
     def __gt__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors > other.number_of_floors  #Дополнено
+            return self.number_of_floors > other.number_of_floors  # Дополнено
         else:
             print('None')
 
     def __ge__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors >= other.number_of_floors   #Дополнено
+            return self.number_of_floors >= other.number_of_floors  # Дополнено
         else:
             print('None')
 
     def __lt__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors < other.number_of_floors  #Дополнено
+            return self.number_of_floors < other.number_of_floors  # Дополнено
         else:
             print('None')
 
     def __le__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors >= other.number_of_floors  #Дополнено
+            return self.number_of_floors >= other.number_of_floors  # Дополнено
         else:
             print('None')
 
     def __ne__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors != other.number_of_floors  #Дополнено
+            return self.number_of_floors != other.number_of_floors  # Дополнено
         else:
             print('None')
 
