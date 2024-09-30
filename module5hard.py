@@ -7,6 +7,9 @@ class User:
         self.password = password
         self.age = age
 
+    def __repr__(self):
+        return self.password
+
     def __eq__(self, other):
         return self.password == other.password
 
@@ -26,6 +29,7 @@ class Video:
 
 
 class UrTube:
+
     def __init__(self):
         self.users = []  # список Userов
         self.videos = []  # список Video
