@@ -23,7 +23,7 @@ class Shop:
             if str(i).upper() in self.get_products():
                 print(f'Продукт {i} уже есть в магазине.')
             else:
-                file.write('\n' + str(i))
+                file.write(f"{i}\n")
         file.close()
 
 
