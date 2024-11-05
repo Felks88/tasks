@@ -1,8 +1,8 @@
 import queue
 import time
-from threading import Thread
+import threading
 import random
-from time import sleep
+
 
 
 class Table:
@@ -11,9 +11,9 @@ class Table:
         self.guest = guest
 
 
-class Guest(Thread):
+class Guest(threading.Thread):
     def __init__(self, name):
-        Thread.__init__(self)
+        threading.Thread.__init__(self)
         self.name = name
 
     def run(self):
