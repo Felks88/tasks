@@ -18,7 +18,6 @@ plt.pie(grade_, labels=dial_, autopct='%1.1f%%')
 plt.title("Успеваемость класса в процентах")
 plt.show()
 
-
 # Проверка соединения с сайтом, получение данных:
 
 # url = 'https://mail.ru/'
